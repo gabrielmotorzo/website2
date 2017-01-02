@@ -1,0 +1,156 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+  font-family: Open Sans,open-sans,sans-serif;
+}
+
+h1,h2,h3 {margin: 0;padding: 0;}
+
+
+/*navbar inverse*/
+.navbar-inverse {
+  border: none;
+  margin-bottom: 0;
+  z-index: 9999;
+}
+
+.navbar-inverse .navbar-collapse { border: none; }
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/*Hamburger*/
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.hamburger-text {
+  font-weight: bold;
+}
+
+.affix {
+  top: 0;
+  width: 100%;
+  background-color: #111;
+  transition: all .5s ease-in-out;
+}
+
+.affix-top {
+  position: static;
+  top: -35px;
+  transition: all .5s ease-in-out;
+}
+
+/*junbotron*/
+.container .jumbotron, .container-fluid .jumbotron {
+  border-radius: 0;
+  padding: 0;
+  background-image: url(../images/banner-1.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 600px;
+  margin-top: -56px; /*this is causing the last link to go out of the box on smaller devices*/
+}
+
+
+h1.banner-heading {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.banner-button {
+  margin-top: 60px;
+  padding: 15px 50px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-style: 18px;
+  text-transform: uppercase;
+}
+
+.bar-section {
+    background-color: #111;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bars {
+    padding: 20px;
+}
+
+
+.bars > strong {
+    font-weight: 700;
+    font-size: 50px;
+    display: block;
+    line-height: 50px;
+    color: #fff;
+}
+
+.bars > label {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.bars > p {
+    line-height: 20px;
+    font-size: 18px;
+    color: #449D44;
+}
+
+@media (max-width: 766px) {
+  img.logo {
+    margin-top: -10px;
+  }
+  .banner{
+    padding: 100px 10px;
+  }
+
+  .visible-xs.rw-sentence {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .bars {
+    padding: 1px;
+  }
+  .bars > strong {
+    font-weight: 700;
+    font-size: 50px;
+  }
+
+  .bars > label {
+      font-size: 15px;
+  }
+
+  .bars > p {
+      font-size: 15px;
+  }
+}
+
+@media (max-width: 358px) {
+  .alignSmall{
+    padding-top: 20px;
+  }
+}
+
+.glyphicon {
+  color: #ff9800;
+}
+
+.btn-success {
+  border-radius: 40px;
+}
