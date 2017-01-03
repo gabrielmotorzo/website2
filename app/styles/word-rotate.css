@@ -4,8 +4,8 @@
     color: #fff;
     font-size: 36px;
     font-weight: 700;
-    /*word-spacing: 2px;
-    line-height: 25px;*/
+    word-spacing: 2px;
+    line-height: 31px;
 }
 .rw-words{
     display: inline;
@@ -39,18 +39,18 @@
     animation-delay: 9s;
     color: #ff9800;
 }
-.rw-words-1 span:nth-child(5) {
+/*.rw-words-1 span:nth-child(5) {
     -webkit-animation-delay: 12s;
     -ms-animation-delay: 12s;
     animation-delay: 12s;
     color: #ff9800;
-}
-.rw-words-1 span:nth-child(6) {
+}*/
+/*.rw-words-1 span:nth-child(6) {
     -webkit-animation-delay: 15s;
     -ms-animation-delay: 15s;
     animation-delay: 15s;
     color: #9b6b9d;
-}
+}*/
 @-webkit-keyframes rotateWord {
     0% { opacity: 0; }
     2% { opacity: 0; -webkit-transform: translateY(-30px); }
