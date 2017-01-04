@@ -20,7 +20,7 @@ h1,h2,h3 {margin: 0;padding: 0;}
   text-align: center;
   font-size: 36px;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 80px;
   margin-left: auto;margin-right: auto;
 }
@@ -82,7 +82,7 @@ h1,h2,h3 {margin: 0;padding: 0;}
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  height: 550px;
+  height: 650px;
   margin-top: -70px; /*this is causing the last link to go out of the box on smaller devices*/
 }
 
@@ -120,8 +120,8 @@ h1.banner-heading {
 
 .bar-section {
     background-color: #111;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .bars {
@@ -270,6 +270,13 @@ h1.banner-heading {
     margin-top: 80px;
   }
 
+  blockquote {
+    padding: 10px 90px;
+  }
+
+  .carousel-caption {
+    padding: 20px 80px
+  }
 }
 
 @media (min-width: 1024px) {
@@ -291,23 +298,55 @@ h1.banner-heading {
   color: ;
 }
 
+blockquote {
+  border-left: none;
+  padding-top: 0;
+}
+
+blockquote footer {
+  color: #fff;
+  /*font-size: 80px;*/
+}
+
+blockquote > p {
+  font-size: 18px;
+  word-spacing: 2px;
+}
+
+blockquote > p > i {
+  color: #449D44;
+  font-size: 40px;
+}
+
+.quot {
+  font-size: 30px;
+}
+
 .btn-success {
   border-radius: 40px;
 }
 
 
-/*.carousel-caption {
+.carousel-caption {
   position: static;
+  /*padding: 20px 50px;|*/
 }
+
+.carousel-control.right, .carousel-control.left {
+  background: transparent;
+}
+
+.carousel-indicators .active { background-color: #449D44; }
 
 .customers-row {
   background-image: url(../images/banner.jpg);
+  background-color: gray;
   background-position: center center;
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin-left: -15px;
-  margin-right: -15px;
-  opacity: .5;
-}*/
+  min-height: 500px;
+  /*height: auto;*/
+  /*opacity: .5;*/
+}
