@@ -86,6 +86,13 @@ h1,h2,h3 {margin: 0;padding: 0;}
   margin-top: -70px; /*this is causing the last link to go out of the box on smaller devices*/
 }
 
+.findOut {
+  color: #fff;
+  margin-top: -30px;
+}
+
+.findOut i {font-size: 25px;}
+
 
 h1.banner-heading {
   text-transform: uppercase;
@@ -250,6 +257,11 @@ h1.banner-heading {
     font-weight: 700;
   }
 
+
+  .why-row {
+    padding-bottom: 50px;
+  }
+
   .bars {
     padding: 1px;
   }
@@ -350,3 +362,101 @@ blockquote > p > i {
   /*height: auto;*/
   /*opacity: .5;*/
 }
+
+#map {
+  height: 500px;
+}
+.map-row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.link-button {
+  padding-top: 200px;
+}
+
+.link-button > h3 {
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+/*stages*/
+/*.steps{
+    background-color: #fff;
+    height: auto !important;
+    padding-left: 0;
+    padding-right: 0;
+}*/
+
+/*.stage-number{
+    color: #ff9800;
+    font-size: 70px;
+    text-align: right;
+    margin-top: 10px;
+}
+.stage-title{
+    color: #ff9800;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.stage-description{
+    color: #2f343c;
+}
+
+#stage-2,.stage-3{
+    background-color: #fff;
+}
+#stage-2 .stage-number,.stage-3 .stage-number{
+    margin-top: 120px;
+}
+#stage-2 .stage-title,.stage-3 .stage-title{
+    margin: 100px 0 10px;
+    white-space: nowrap;
+}
+
+#stage2img{
+    background-image: url("../images/get.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+#stage1img{
+    background-image: url("../images/identify.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+#stage3img{
+    background-image: url("../images/relax.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+
+.stage-down{
+    margin-top: 120px;
+}
+.stage-number{
+    line-height: 1;
+    font-size: 70px;
+    color: #ff9800;
+}
+.stage-title{
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+.stage-description{
+    margin-bottom: 30px;
+}
+
+.image{
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+    padding-left: 0;
+}*/
