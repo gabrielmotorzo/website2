@@ -228,81 +228,7 @@
   </div>
 </div>
 
-<div class="service-row">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <h2>services</h2>
-      </div>
-    </div>
-    <div class="row text-center">
-      <div class="col-sm-6 col-md-4 service-box">
-        <div class="inner">
-          <img ng-src="images/icons/1a.png" alt="regular service">
-          <div class="service-content">
-            <h3>regular service</h3>
-            <p>Regular service and maintenance is important in keeping your car in top shape. Get the best prices only on MotorZo.</p>
-            <div><a ng-href="#/">readmore &raquo;</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4 service-box">
-        <div class="inner">
-          <img ng-src="images/icons/2a.png" alt="regular service">
-          <div class="service-content">
-            <h3>repairs &amp; fixes</h3>
-            <p>You never know when your car might need repairs. Stay ahead and get the best service possible with MotorZo.</p>
-            <div><a ng-href="#/">readmore &raquo;</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="clearfix visible-sm-block"></div>
-      <div class="col-sm-6 col-md-4 service-box">
-        <div class="inner">
-          <img ng-src="images/icons/3a.png" alt="regular service">
-          <div class="service-content">
-            <h3>cleaning &amp; care</h3>
-            <p>There's nothing like a shining, sparkling car. And there's no one better than MotorZo to do it.</p>
-            <div><a ng-href="#/">readmore &raquo;</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="clearfix visible-md-block"></div>
-      <div class="col-sm-6 col-md-4 service-box">
-        <div class="inner">
-          <img ng-src="images/icons/4a.png" alt="regular service">
-          <div class="service-content">
-            <h3>bodyworks</h3>
-            <p>Worried about how expensive denting and painting works are? You should definitely try MotorZo to get great deals at the best service stations.</p>
-            <div><a ng-href="#/">readmore &raquo;</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="clearfix visible-sm-block"></div>
-      <div class="col-sm-6 col-md-4 service-box">
-        <div class="inner">
-          <img ng-src="images/icons/6a.png" alt="regular service">
-          <div class="service-content">
-            <h3>breakown</h3>
-            <p>Car broke down and don't know what to do? Contact us and we will save your day.</p>
-            <div><a ng-href="#/">readmore &raquo;</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4 service-box">
-        <div class="inner">
-          <img ng-src="images/icons/5a.png" alt="regular service">
-          <div class="service-content">
-            <h3>tyres &amp; batteries</h3>
-            <p>Don't know where to go to get new tyres and batteries? MotorZo gives you the best placesnear you.</p>
-            <div><a ng-href="#/">readmore &raquo;</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+<div ng-include="'layout/services.html'"></div>
 <div class="ready ">
 <div class="row">
   <div class="col-xs-12 col-sm-6 text-center link-button">
@@ -324,11 +250,11 @@
 </div>
 </div>
 
-<div class="map-row" style="background-color: #f1f1f1">
+<div class="map-row" style="background-color: #ff9800">
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
-        <h2>our vendors are alll over bangalore</h2>
+        <h2 style="color: #fff;">our vendors are alll over bangalore</h2>
       </div>
     </div>
     <div class="row">
@@ -340,3 +266,114 @@
 
 
 </div>
+
+
+
+
+<script>
+        var beaches = [
+      ['beach', 12.9081, 77.6476,4],
+      ['beach', 12.9787, 77.5724,3],
+      ['beach', 12.9372, 77.5116,2],
+      ['beach', 12.9317, 77.6227,1],
+      ['beach', 13.0617033, 77.2962104,5],
+      ['beach', 12.9719, 77.6412,6],
+      ['beach', 13.012, 77.6471,7],
+      ['beach', 12.843148, 77.674889,8],
+      ['beach', 13.010510, 77.551033,9],
+      ['beach', 12.917980, 77.640961,10],
+      ['beach', 12.929422, 77.678823,11],
+      ['beach', 12.906561, 77.592777,12],
+      ['beach', 12.987429, 77.741265,13],
+      ['beach', 13.033326, 77.598001,14],
+      ['beach', 12.900529, 77.563830,15],
+      ['beach', 12.911514, 77.607354,16],
+      ['beach', 13.010817, 77.506579,17],
+      ['beach', 12.960752, 77.740304,18],
+      ['beach', 12.937562, 77.746452,19],
+      ['beach', 12.901110, 77.484337,20],
+      ['beach', 12.963599, 77.453962,21],
+      ['beach', 13.020563, 77.596620,22]
+    ];
+
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: {lat: 12.9716, lng: 77.5946},
+        mapTypeControl: false,
+        draggable: false,
+        scaleControl: false,
+        scrollwheel: false,
+        navigationControl: false,
+        streetViewControl: false,
+        zoomControl: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+      setMarkers(map);
+      var styles = [
+        {
+          stylers: [
+            { hue: '#2f343c' },
+            { saturation: -20 }
+          ]
+        },
+        {
+          featureType: 'road',
+          elementType: 'geometry',
+          stylers: [
+            { lightness: 100 },
+            { visibility: 'on' },
+            { color: '#ff9800'}
+          ]
+        },
+        {
+          featureType: 'road',
+          elementType: 'labels',
+          stylers: [
+            { visibility: 'off' }
+          ]
+        }
+      ];
+      map.setOptions({styles: styles});
+    }
+
+    function setMarkers(map) {
+
+      var image = {
+        url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+        // This marker is 20 pixels wide by 32 pixels high.
+        size: new google.maps.Size(12, 27),
+        // The origin for this image is (0, 0).
+        origin: new google.maps.Point(0, 0),
+        // The anchor for this image is the base of the flagpole at (0, 32).
+        anchor: new google.maps.Point(0, 32)
+      };
+
+      var shape = {
+        coords: [1, 1, 1, 20, 18, 20, 18, 1],
+        type: 'poly'
+      };
+      for (var i = 0; i < beaches.length; i++) {
+        var beach = beaches[i];
+        var marker = new google.maps.Marker({
+          position: {lat: beach[1], lng: beach[2]},
+          map: map,
+          icon: image,
+          shape: shape,
+          title: beach[0],
+          zIndex: beach[3],
+          animation: google.maps.Animation.BOUNCE
+        });
+      }
+    }
+      </script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>

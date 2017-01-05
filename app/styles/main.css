@@ -31,6 +31,7 @@ h1,h2,h3 {margin: 0;padding: 0;}
   border: none;
   margin-bottom: 0;
   z-index: 9999;
+  border-radius: 0;
 }
 
 .navbar-inverse .navbar-collapse { border: none; }
@@ -82,7 +83,7 @@ h1,h2,h3 {margin: 0;padding: 0;}
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  background-color: #449D44;
+  background-color: #kb9D44;
   height: 650px;
   margin-top: -70px; /*this is causing the last link to go out of the box on smaller devices*/
   margin-bottom: 0;
@@ -429,4 +430,56 @@ blockquote > p > i {
 .step-images {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+.footer {
+  padding: 30px 10px;
+  background-color: #111;
+}
+
+
+.all-banner {
+  background-image: url(../images/allBanner.jpg);
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;background-repeat: no-repeat;
+  height: 300px;
+}
+
+.all-banner-inner{
+  padding-top: 70px;
+  color: #fff;
+}
+
+.about-us {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  /*padding: 80px 40px;*/
+}
+
+.about-us p {
+  color: #111;
+  font-size: 20px;
+}
+
+.panel.panel-success {
+  transition: all .5s ease-in-out;
+}
+
+.panel.panel-success:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.panel-profile .panel-heading {
+  height: 150px;-webkit-background-size: cover;
+  background-size: cover;
+}
+.panel-profile-img {
+  max-width: 100px;
+  margin-top: -70px;
+  margin-bottom: 5px;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
