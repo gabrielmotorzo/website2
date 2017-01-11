@@ -26,6 +26,9 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/faq', {
+        templateUrl: 'views/faq.html'
+      })
       .otherwise({
         redirectTo: '/home'
       });
